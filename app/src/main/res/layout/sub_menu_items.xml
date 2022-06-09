@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4dp"
     android:elevation="@dimen/_5dp"
     app:cardCornerRadius="@dimen/tweleve_dp"
     app:cardElevation="@dimen/_5dp">
@@ -10,12 +11,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="6">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/itemImg"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
             android:layout_margin="@dimen/_3dp"
             android:src="@drawable/ic_launcher_background" />
 
@@ -23,7 +26,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/_9dp"
+            android:layout_marginStart="@dimen/_7dp"
+            android:layout_marginTop="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_3dp"
+            android:layout_weight="3"
             android:orientation="vertical">
 
             <TextView
@@ -32,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:maxLines="2"
                 android:text="@string/kdf_arabic_bar_b_q_platter"
-                android:textColorLink="@color/black"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -42,15 +48,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_3dp"
                 android:text="@string/rs_50"
-                android:textColorLink="@color/black"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_16sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/itemDesc"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_3dp"
+                android:maxLines="2"
                 android:text="@string/item_short_description_will_come_here"
                 android:textSize="@dimen/_16sp" />
 
@@ -61,7 +68,8 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:layout_marginEnd="@dimen/_16sp"
+            android:layout_marginStart="@dimen/_3dp"
+            android:layout_marginEnd="@dimen/tweleve_dp"
             android:contentDescription="@string/todo"
             android:src="@drawable/cart"
             app:tint="@color/primary" />

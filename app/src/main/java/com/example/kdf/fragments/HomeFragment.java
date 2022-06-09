@@ -64,11 +64,11 @@ public class HomeFragment extends Fragment implements StartListener {
             pullToRefresh.setRefreshing(false);
         });
 
-        carouselViewPager = view.findViewById(R.id.carouselViewPager) ;
+        carouselViewPager = view.findViewById(R.id.carouselViewPager);
         tabLayout = view.findViewById(R.id.my_tablayout);
         getCarouselData();
         carouselViewPager.setAdapter(new CarouselAdapter(requireContext(), carouselModel));
-        tabLayout.setupWithViewPager(carouselViewPager,true);
+        tabLayout.setupWithViewPager(carouselViewPager, true);
         return view;
     }
 

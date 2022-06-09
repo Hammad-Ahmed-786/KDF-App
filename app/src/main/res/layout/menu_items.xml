@@ -44,6 +44,7 @@
             android:ellipsize="end"
             android:gravity="center"
             android:singleLine="true"
+            android:layout_marginBottom="@dimen/_3dp"
             android:text="Menu Item Short Description"
             android:textSize="@dimen/_13sp" />
 

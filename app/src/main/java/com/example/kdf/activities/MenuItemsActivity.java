@@ -1,25 +1,22 @@
 package com.example.kdf.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.kdf.R;
-import com.example.kdf.adapters.MenuAdapter;
 import com.example.kdf.adapters.SubMenuItemsAdapter;
-import com.example.kdf.fragments.HomeFragment;
 import com.example.kdf.interfaces.StartListener;
-import com.example.kdf.models.MenuModel;
 import com.example.kdf.models.SubMenuModel;
 import com.example.kdf.networking.APIs;
 import com.example.kdf.utils.Preferences;
@@ -28,6 +25,7 @@ import com.facebook.shimmer.ShimmerFrameLayout;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,7 +35,7 @@ public class MenuItemsActivity extends AppCompatActivity implements StartListene
     RecyclerView subMenuRV;
     private ShimmerFrameLayout mShimmerViewContainer;
     SubMenuItemsAdapter adapter;
-    List<SubMenuModel> model;
+    List<SubMenuModel> model = new ArrayList<>();
     int menuPosition ;
 
     @Override
@@ -49,8 +47,8 @@ public class MenuItemsActivity extends AppCompatActivity implements StartListene
         mShimmerViewContainer = findViewById(R.id.shimmer);
         subMenuRV.setLayoutManager(new LinearLayoutManager(this));
         subMenuRV.setHasFixedSize(true);
-
         menuPosition = getIntent().getIntExtra("position", 0);
+        getData();
 
         final SwipeRefreshLayout pullToRefresh = findViewById(R.id.swiperefresh);
         pullToRefresh.setOnRefreshListener(() -> {
@@ -60,7 +58,8 @@ public class MenuItemsActivity extends AppCompatActivity implements StartListene
     }
 
     private void getData() {
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, APIs.GET_PRODUCT , response -> {
+        Log.d("link", "getData: " + APIs.GET_PRODUCT + menuPosition);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, APIs.GET_PRODUCT + menuPosition, response -> {
             try {
                 JSONObject jObj = new JSONObject(response);
                 JSONArray jr = jObj.getJSONArray("products");
