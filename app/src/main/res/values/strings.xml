@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">KDF</string>
+    <string name="intro_title">Welcome to KDF</string>
+    <string name="intro_desc">Get the delicious meal at the very best price</string>
+    <string name="todo">TODO</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Get Started</string>
+    <string name="enter_email">Enter Email...</string>
+    <string name="password">Enter Password...</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_user">Enter Username...</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_phone">Enter phone number...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="update">Update</string>
+</resources>
