@@ -16,7 +16,10 @@
         android:theme="@style/Theme.KDF"
         tools:targetApi="31">
         <activity
-            android:name=".UpdateUserActivity"
+            android:name=".activities.MenuItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateUserActivity"
             android:exported="false" />
         <activity
             android:name=".activities.SignUpActivity"

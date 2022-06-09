@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#ff6148</color>
     <color name="secondary">#F15F48</color>
+    <color name="bg_color">#F9F6EE</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>

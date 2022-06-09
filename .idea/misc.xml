@@ -6,10 +6,12 @@
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/drawable/edit_text.xml" value="0.148" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/drawable/sign_btn.xml" value="0.148" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
+        <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/activity_menu_items.xml" value="0.178125" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/activity_sign_in.xml" value="0.178125" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/activity_sign_up.xml" value="0.1921875" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/activity_update_user.xml" value="0.178125" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/activity_welcome.xml" value="0.17074275362318841" />
+        <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/carousel_view.xml" value="0.1921875" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/fragment_cart.xml" value="0.178125" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/fragment_home.xml" value="0.1921875" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/fragment_profile.xml" value="0.178125" />
@@ -17,6 +19,9 @@
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/intro_2.xml" value="0.19114583333333332" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/intro_3.xml" value="0.1576923076923077" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/intro_4.xml" value="0.15683760683760684" />
+        <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/item_shimmer.xml" value="0.1921875" />
+        <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/menu_items.xml" value="0.13703703703703704" />
+        <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/layout/sub_menu_items.xml" value="0.1921875" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1921875" />
         <entry key="..\:/Android/Sarhad University/KDF/App/app/src/main/res/menu/profile_menu.xml" value="0.1921875" />
       </map>

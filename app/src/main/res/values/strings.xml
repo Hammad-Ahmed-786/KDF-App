@@ -16,4 +16,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="update_profile">Update Profile</string>
     <string name="update">Update</string>
+    <string name="categories">Categories</string>
+    <string name="kdf_arabic_bar_b_q_platter">KDF Arabic Bar B Q Platter</string>
+    <string name="rs_50">RS. 50</string>
+    <string name="item_short_description_will_come_here">Item Short Description will Come Here</string>
 </resources>
